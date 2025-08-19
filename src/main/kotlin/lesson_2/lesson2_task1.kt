@@ -1,11 +1,13 @@
 package org.example.lesson_2
 
 fun main() {
-    val sr1 = 3
-    val sr2 = 4
-    val sr3 = 5
-    val sr4 = 3
-    val srAr: Double = (sr1+sr2+sr3+sr4).toDouble() / 4
+    val numberOfStudents = 4
+    val studentScore1 = 3
+    val studentScore2 = 4
+    val studentScore3 = 5
+    val studentScore4 = 3
+    val averageScoreClass: Double =
+        (studentScore1 + studentScore2 + studentScore3 + studentScore4).toDouble() / numberOfStudents
 
-    println("%.2f".format(srAr))
+    println("Средний балл класса: %.2f".format(averageScoreClass))
 }
