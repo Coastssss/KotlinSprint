@@ -1,18 +1,17 @@
 package org.example.lesson_1
 
-fun main()
-{
+fun main() {
     val year: Int = 1961
-    var hour: Int = 9
-    var minute: Int =7
+    var hours: Int = 9
+    var minute: Int = 7
 
     println("Взлет:")
     println(year)
-    println(hour)
+    println(hours)
     println(minute)
 
-    hour = 10
+    hours = 10
     minute = 55
 
-    println("Посадка: $hour:$minute")
+    println("Посадка: %02d:%02d".format(hours, minute))
 }
