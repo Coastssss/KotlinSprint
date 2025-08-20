@@ -12,12 +12,12 @@ const val MINUTE_IN_HOUR = 60
 fun main() {
     val checkoutHours: Int = 9
     val checkoutMinutes: Int = 39
-    var travelTimeMinutes: Int = 457
+    val travelTimeMinutes: Int = 457
 
 
-    var pathInHours: Int = travelTimeMinutes / MINUTE_IN_HOUR
+    val pathInHours: Int = travelTimeMinutes / MINUTE_IN_HOUR
     val pathInMinutes: Int = travelTimeMinutes % MINUTE_IN_HOUR
     val totalMinutes: Int = (checkoutMinutes + pathInMinutes) % MINUTE_IN_HOUR
     val totalHours: Int = checkoutHours + pathInHours + ((checkoutMinutes + pathInMinutes) / MINUTE_IN_HOUR)
 
-    println("Время прибытия: %02d:%02d".format(totalHours,totalMinutes))
+    println("Время прибытия: %02d:%02d".format(totalHours, totalMinutes))
