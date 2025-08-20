@@ -21,3 +21,4 @@ fun main() {
     val totalHours: Int = checkoutHours + pathInHours + ((checkoutMinutes + pathInMinutes) / MINUTE_IN_HOUR)
 
     println("Время прибытия: %02d:%02d".format(totalHours, totalMinutes))
+}
