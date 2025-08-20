@@ -1,17 +1,17 @@
 package org.example.lesson_1
 
 fun main() {
-    val year: Int = 1961
-    var hours: Int = 9
-    var minute: Int = 7
+    val year: String = "1961"
+    var hours: String = "09"
+    var minute: String = "07"
 
     println("Взлет:")
     println(year)
     println(hours)
     println(minute)
 
-    hours = 10
-    minute = 55
+    hours = "10"
+    minute = "55"
 
-    println("Посадка: %02d:%02d".format(hours, minute))
+    println("Посадка: ${hours}:${minute}")
 }
