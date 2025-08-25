@@ -1,11 +1,11 @@
 package org.example.lesson_5
+import kotlin.random.Random
 
 fun main() {
-    val winningNumber1 = 17
-    val winningNumber2 = 33
+    val winningNumber1 = Random.nextInt(0, 42)
+    val winningNumber2 = Random.nextInt(0, 42)
 
-    println("Угадайте два числа от 0 до 42 и выиграйте приз!")
-    println()
+    println("Угадайте два числа от 0 до 42 и выиграйте приз!\n")
 
     print("Введите первое число (0-42): ")
     val userNumber1 = readln().toInt()
